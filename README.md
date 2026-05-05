@@ -11,7 +11,7 @@ Live site: [nordic-biomathematics.github.io](https://nordic-biomathematics.githu
 
 ## Acknowledgements
 
-Supported by the [Wenner-Gren Foundations](https://www.wennergren.org).
+Supported by the [Wenner-Gren Foundations](https://www.swgc.org/).
 
 Website built on the [conference-website-template](https://github.com/mikepierce/conference-website-template) by Mike Pierce.
 

@@ -82,45 +82,53 @@ th,td{
 .hero {
     position: relative;
     width: 1000px;
-    height: 460px;
-    background-image: url('assets/banner_website.png');
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 320px;
     overflow: hidden;
+    background-color: #2c3e50; /* fallback if image fails */
+}
+.hero-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+    display: block;
 }
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(20,40,60,0.45) 0%, rgba(20,40,60,0.68) 100%);
+    background: linear-gradient(to bottom, rgba(20,40,60,0.30) 0%, rgba(20,40,60,0.65) 100%);
     pointer-events: none;
 }
 .hero-content {
-    position: relative;
+    position: absolute;
+    inset: 0;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #fff;
     padding: 0 56px;
-    width: 100%;
     box-sizing: border-box;
 }
 .hero-title {
     font-family: 'Roboto Slab', serif;
-    font-size: 2.3em;
+    font-size: 2.1em;
     color: #fff;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.55);
-    margin: 0 0 18px 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    margin: 0 0 14px 0;
     line-height: 1.25em;
 }
 .hero-sub {
-    font-size: 1.1em;
+    font-size: 1.05em;
     color: rgba(255,255,255,0.93);
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
-    margin: 5px auto;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.55);
+    margin: 3px auto;
     width: auto;
     text-align: center;
+    padding: 0;
 }
 
 /* Navigation – sticky blue bar */
@@ -194,7 +202,7 @@ td.info-value{padding:6px 0px 6px 0px; vertical-align:top;}
 /* Mobile responsiveness */
 @media only screen and (max-width: 1100px) {
     body { width: 100%; padding: 0 0 40px 0; }
-    .hero { width: 100%; height: 320px; }
+    .hero { width: 100%; height: 220px; }
     .hero-title { font-size: 1.65em; }
     .hero-sub { font-size: 0.95em; }
     table.navigation { width: 100%; position: relative; }

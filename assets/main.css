@@ -1,0 +1,147 @@
+/* main.css */
+
+/* These are the colors and fonts used throughout the webpage.
+ *   'Roboto',sans-serif; Font for the title text
+ *   'Roboto-Slab',serif; Font for the body text 
+ *   #fafafa; Background color of the site
+ *   #2c3e50; Foreground (text) color of the site
+ *   #2c5f8a; Nordic blue – current page in navigation, special titles
+ *   #1a6b4a; Nordic green – title accent, hover color for links
+ *   #2c5f8a; Heading color, titles in the Program
+ *   #1a5c3a; Link hover color
+ *   #1a6b4a; Link color
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+
+*{
+    border:0;
+    font:inherit;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+body{
+    background-color: #fafafa;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c3e50; 
+    text-align:left;
+    font-family:'Roboto',sans-serif;
+    font-size:1em;
+    line-height:1.5em;
+    margin: 60px auto;
+    width: 1000px;
+}
+
+a{color: #1a6b4a; text-decoration:none;}
+a.current{color: #2c5f8a;}
+a.current:hover{color: #1a5c3a;}
+a:hover{color: #1a5c3a;}
+a:active{color: #1a5c3a;}
+h1,h2,h3,h4{clear:left; color: #2c5f8a; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+li a, p a {text-decoration:underline; text-decoration-color:#1a6b4a;}
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
+ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+/* Website Banner */
+.banner {position: relative; font-family:'Roboto Slab',serif;}
+.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
+.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+
+/* Conference Title Logo */
+.title1{color: #2c5f8a; text-shadow: 1px 1px 3px #c0c0c0;} 
+.title2{color: #1a6b4a; text-shadow: 1px 1px 3px #c0c0c0;}
+.year{color: #505050; font-size:0.67em; font-weight: lighter;}
+
+/* Navigation Links (Home, Registration, etc) */
+table.navigation{width:1000px;}
+td.navigation{font-size:1.1em; white-space:nowrap; width:12.5%; text-align:center; vertical-align:middle; padding:4px 2px 4px 2px;}
+
+/* Sponsor Images */
+table.sponsors{width:800px;}
+td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #2c5f8a; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #1a6b4a; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+table.plenary{padding-top: 8px; background: #ffffff;}
+
+/* Registration and Directions iframes and Images */
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+img.center{display:block; width:67%; margin:1em auto 2em auto;}
+
+/* Flyer Images */
+table.flyers{width:800px;}
+td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+
+footer{font-size:0.875em; margin-top:6em; text-align:center;}
+
+/* Info grid for home page */
+table.info{width:900px; margin: 0 auto 24px auto; border-collapse:collapse;}
+td.info-label{font-weight:bold; color:#2c5f8a; padding:6px 16px 6px 0px; width:200px; vertical-align:top;}
+td.info-value{padding:6px 0px 6px 0px; vertical-align:top;}
+
+/* Speaker cards */
+.speaker-card{margin:24px auto; padding:20px 24px; background:#ffffff; border-left:4px solid #2c5f8a; max-width:860px; box-shadow:0 1px 4px rgba(0,0,0,0.08);}
+.speaker-card h3{margin:0 0 4px 0; color:#2c5f8a; font-size:1.3em;}
+.speaker-card .affiliation{color:#1a6b4a; font-style:italic; margin-bottom:6px;}
+.speaker-card .topic{margin:0;}
+.speaker-card .featured-badge{display:inline-block; background:#1a6b4a; color:#fff; font-size:0.8em; padding:2px 8px; border-radius:3px; margin-left:8px; vertical-align:middle; font-style:normal;}
+
+/* Status box */
+.status-box{background:#f0f5f0; border:1px solid #c8ddc8; border-radius:4px; padding:16px 24px; margin:16px auto; max-width:860px;}
+.status-box p{margin:6px auto; width:auto;}
+
+/* Programme day header */
+.day-header{background:#2c5f8a; color:#fff; padding:10px 16px; margin:32px 0 0 0; font-family:"Roboto Slab",serif; font-size:1.3em;}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+

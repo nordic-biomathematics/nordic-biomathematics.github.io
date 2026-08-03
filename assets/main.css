@@ -186,6 +186,21 @@ section {
     scroll-margin-top: 46px; /* offset for sticky nav */
 }
 
+/* Speaker bios */
+.speaker {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #e0e0e0;
+}
+.speaker:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.speaker p {
+    margin: 0.2em 0;
+}
+
 /* Preliminary badge */
 .prelim-badge {
     display: inline-block;

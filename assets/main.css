@@ -258,6 +258,7 @@ td.info-value{padding:6px 0px 6px 0px; vertical-align:top;}
 /* Mobile responsiveness */
 @media only screen and (max-width: 1100px) {
     body { width: 100%; padding: 0 0 40px 0; }
+    section { padding-left: 1.2em; padding-right: 1.2em; }
     .hero { width: 100%; height: 220px; }
     .hero-title { font-size: 1.65em; }
     .hero-sub { font-size: 0.95em; }
@@ -265,8 +266,8 @@ td.info-value{padding:6px 0px 6px 0px; vertical-align:top;}
     td.navigation { font-size: 1.05em; padding: 10px 6px; }
     table { width: 100%; }
     h2 { font-size: 2.2em; }
-    p { font-size: 1.1em; line-height: 1.6em; width: 90%; }
-    ul { width: 88%; }
+    p { font-size: 1.1em; line-height: 1.6em; width: 100%; }
+    ul { width: 100%; }
     td.info-label { font-size: 1em; }
     td.info-value { font-size: 1em; }
     .speaker-card { margin: 16px 4%; }

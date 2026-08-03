@@ -201,10 +201,10 @@ section {
     padding-bottom: 0;
 }
 .speaker-photo {
-    width: 90px;
-    height: 90px;
-    max-width: 90px;
-    max-height: 90px;
+    width: 90px !important;
+    height: 90px !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
     object-fit: cover;
     object-position: center top;
     border-radius: 4px;

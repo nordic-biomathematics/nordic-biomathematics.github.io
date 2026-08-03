@@ -188,6 +188,9 @@ section {
 
 /* Speaker bios */
 .speaker {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2em;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #e0e0e0;
@@ -197,8 +200,20 @@ section {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.speaker p {
+.speaker-photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+.speaker-text p {
     margin: 0.2em 0;
+}
+@media (max-width: 600px) {
+    .speaker { flex-direction: column; }
+    .speaker-photo { width: 80px; height: 80px; }
 }
 
 /* Preliminary badge */

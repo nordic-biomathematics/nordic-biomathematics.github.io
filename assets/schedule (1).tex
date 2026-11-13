@@ -1,0 +1,105 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,landscape,margin=1.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+\definecolor{plenary}{gray}{0.92}
+\definecolor{session}{gray}{0.80}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{T}{>{\raggedright\arraybackslash}p{2.4cm}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% \talk{Name}{Affiliation}{Title}
+\newcommand{\talk}[3]{\textbf{#1} {\small(#2)}\newline\emph{#3}}
+% Full-width row (registration, keynotes, breaks)
+\newcommand{\plenary}[2]{\rowcolor{plenary} #1 & \multicolumn{2}{p{\dimexpr\linewidth-2.4cm-4\tabcolsep\relax}}{#2} \\}
+% Room name shown after a plenary item or session name
+\newcommand{\room}[1]{\hfill{\normalfont\small\itshape #1}}
+% Header row for a single-track (plenary) block
+\newcommand{\plenaryhead}[2]{\rowcolor{session} #1 & \multicolumn{2}{p{\dimexpr\linewidth-2.4cm-4\tabcolsep\relax}}{\textbf{Single track} \room{#2}} \\}
+% Header row naming the two parallel sessions
+\newcommand{\sessions}[3]{\rowcolor{session} #1 & \textbf{#2} & \textbf{#3} \\}
+
+\pagestyle{empty}
+\begin{document}
+
+%% ===================== DAY 1 =====================
+\section*{Day 1 -- Thursday 3 December}
+\noindent\emph{Talks in the parallel sessions are 12 minutes plus questions (20-minute slots).}\par\medskip
+
+\noindent\begin{tabularx}{\linewidth}{T Y Y}
+\toprule
+\textbf{Time} & \textbf{Track A} & \textbf{Track B} \\
+\midrule
+\plenaryhead{09.00--10.00}{Evelyn Sokolowski A}
+\plenary{09.00--09.10}{Registration}
+\plenary{09.10--09.20}{Welcome}
+\plenary{09.20--10.00}{\textbf{Keynote 1:} Susanne Ditlevsen (University of Copenhagen) (30+10 min)}
+\plenary{10.00--10.30}{Room change \& fika}
+\sessions{10.30--11.30}{Inference \& identifiability \room{Room 101166}}{Evolution \& behaviour \room{Room 101162}}
+10.30--10.50 & \talk{Henrik Häggström}{Chalmers \& University of Gothenburg}{Semi-amortised simulation-based inference for stochastic nonlinear mixed-effects models}
+             & \talk{Daniel Strömbom}{Lafayette College}{Modeling behaviorally mediated biological control of potentially toxic invasive pests} \\
+10.50--11.10 & \talk{Jodie Cochrane}{Uppsala University}{Bayesian inference with discrete parameters: methods and applications in the life sciences}
+             & \talk{Hanna Isaksson}{Lund University}{Cell death and group composition shape multicellular reproduction} \\
+11.10--11.30 & \talk{Torkel Loman}{University of Oxford}{Identifiability for hybrid mechanistic/machine learning models}
+             & \talk{Kalle Parvinen}{University of Turku}{Evolution of dispersal in a spatially heterogeneous population with finite patch sizes and catastrophes} \\
+\plenary{11.30--13.00}{Lunch}
+\sessions{13.00--13.40}{Learning from spatio-temporal data \room{Evelyn Sokolowski A}}{Cell populations \room{Evelyn Sokolowski B}}
+13.00--13.20 & \talk{Niklas Moser}{University of Jyväskylä}{Likelihood-based methods for agent-based models}
+             & \talk{Gesina Menz}{Uppsala University}{Local rules and mechanochemical feedback as a driver of global patterns in stochastic activator--inhibitor models} \\
+13.20--13.40 & \talk{William Lavery}{Uppsala University}{Towards inferring biological mechanisms with physics-informed neural networks}
+             & \talk{Lotta Eriksson}{Chalmers University of Technology}{Inferring sensitive--resistant tumor dynamics from longitudinal liquid-biopsy copy-number and tumor burden data} \\
+\plenary{13.40--13.50}{Room change}
+\plenaryhead{13.50--17.15}{Evelyn Sokolowski A}
+\plenary{13.50--14.30}{\textbf{Keynote 2:} Susanna Röblitz (University of Bergen) (30+10 min)}
+\plenary{14.30--14.55}{\textbf{Nordic-language keynote:} Mats Gyllenberg (Finnish Society of Sciences and Letters \& University of Helsinki) (15+10 min)}
+\plenary{14.55--15.00}{Line-up for flash talks}
+\plenary{15.00--15.15}{Poster flash talks \& room re-modelling}
+\plenary{15.15--17.15}{Fika \& posters}
+\plenary{17.15--17.30}{Walk to dinner}
+\plenary{17.30--19.00}{Dinner at Elmas}
+\bottomrule
+\end{tabularx}
+
+\newpage
+%% ===================== DAY 2 =====================
+\section*{Day 2 -- Friday 4 December}
+\noindent\emph{Talks in the parallel sessions are 12 minutes plus questions (20-minute slots).}\par\medskip
+
+\noindent\begin{tabularx}{\linewidth}{T Y Y}
+\toprule
+\textbf{Time} & \textbf{Track A} & \textbf{Track B} \\
+\midrule
+\plenaryhead{09.00--10.05}{Room 2005}
+\plenary{09.00--09.05}{Welcome}
+\plenary{09.05--09.35}{\textbf{Keynote 3:} Eric Libby (Umeå University) (20+10 min)}
+\plenary{09.35--10.05}{\textbf{Keynote 4:} Stefano Sarao Mannelli (Chalmers \& University of Gothenburg) (20+10 min)}
+\plenary{10.05--10.30}{Room change \& fika}
+\sessions{10.30--11.30}{Cancer therapy \room{Room 2005}}{Bacteria, wounds \& bone \room{Room 2004}}
+10.30--10.50 & \talk{Morten Andersen}{Roskilde University}{Why care about mathematical modelling when studying blood cancer, chronic inflammation and treatment}
+             & \talk{Silas Poloni Lyra}{Roskilde University}{Understanding quorum sensing bacteria one model at a time} \\
+10.50--11.10 & \talk{Jonathan Rodriguez}{Oslo University Hospital}{Predictive modeling of cellular malignancy and therapy}
+             & \talk{Erik Blom}{Uppsala University}{Data-driven modeling of wound closure} \\
+11.10--11.30 & \talk{Einar Bjarki Gunnarsson}{University of Iceland}{Sharp transitions between optimal therapy regimes reveal robust dosing strategies against drug-induced persistence}
+             & \talk{Soroush Mehrpou}{University of Bergen}{Combining mechanistic modeling with biobank data to assess the effect of pharmacological osteoporosis therapy in women with or without HRT} \\
+\plenary{11.30--13.00}{Lunch}
+\sessions{13.00--14.00}{Tissues \& tumours \room{Room 2005}}{Tracing, forecasting \& trials \room{Room 2002}}
+13.00--13.20 & \talk{Stefan Engblom}{Uppsala University}{From single cells to tumors: computational modeling and analysis of cell populations}
+             & \talk{Martina Favero}{Stockholm University}{Analysing sideward contact tracing through a branching process with sibling dependencies} \\
+13.20--13.40 & \talk{Irina Pettersson}{Chalmers \& University of Gothenburg}{Mathematical modeling of electropermeabilization in biological tissues: from microscale to macroscale}
+             & \talk{Nils Grimbeck}{Chalmers University of Technology}{Diversity as a forecasting asset: a wisdom of crowds perspective on multi model infectious disease forecasting ensembles} \\
+13.40--14.00 & \talk{Nikos Kavallaris}{Karlstad University}{Nonlocal proliferation and explosive tumour dynamics: mechanistic modelling and Bayesian inference} \\
+\plenary{14.00--14.10}{Room change}
+\plenaryhead{14.10--14.50}{Room 2005}
+\plenary{14.10--14.40}{\textbf{Keynote 5:} David Sumpter (Uppsala University) (20+10 min)}
+\plenary{14.40--14.50}{Thanks, goodbye}
+\plenary{14.50--16.00}{You are welcome to hang out in our coffee room for informal discussions}
+\bottomrule
+\end{tabularx}
+
+\end{document}
